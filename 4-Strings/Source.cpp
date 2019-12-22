@@ -1,22 +1,20 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
-	string name;
+	std::string name;
 
-	cout << "Type name: ";
-	cin >> name;
+	std::cout << "Type name: ";
+	std::cin >> name;
 
-	string greeting = "Hello, ";
+	std::string greeting = "Hello, ";
 	greeting += name;
-	cout << greeting << endl;
+	std::cout << greeting << std::endl;
 
 	auto space = greeting.find(" ");
 
-	cout << greeting.substr(space + 1) << endl;
+	std::cout << greeting.substr(space + 1) << std::endl;
 
 
 
