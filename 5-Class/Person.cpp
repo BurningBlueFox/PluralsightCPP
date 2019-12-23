@@ -29,31 +29,31 @@ namespace Human::Monkey
 	{
 		return height == p.height;
 	}
-	bool Person::operator<(int i) const
+	bool Person::operator<(int const i) const
 	{
 		return height < i;
 	}
-	bool Person::operator>(int i) const
+	bool Person::operator>(int const i) const
 	{
 		return height > i;
 	}
-	bool Person::operator==(int i) const
+	bool Person::operator==(int const i) const
 	{
 		return height == i;
 	}
-	void Person::Print()
+	void const Person::Print()
 	{
 		std::cout << "I'm printing to the console" << std::endl;
 	}
-	bool operator<(int i, Person p)
+	bool operator<(int const i, Person const p)
 	{
 		return i < p.GetHeight();
 	}
-	bool operator>(int i, Person p)
+	bool operator>(int const i, Person const p)
 	{
 		return i > p.GetHeight();
 	}
-	bool operator==(int i, Person p)
+	bool operator==(int const i, Person const p)
 	{
 		return i == p.GetHeight();
 	}

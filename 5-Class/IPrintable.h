@@ -4,5 +4,5 @@
 class IPrintable
 {
 public:
-	virtual void Print() = 0;
+	virtual void const Print() = 0;
 };

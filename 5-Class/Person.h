@@ -23,10 +23,10 @@ namespace Human::Monkey
 		bool operator<(Person const& p) const;
 		bool operator>(Person const& p) const;
 		bool operator==(Person const& p) const;
-		bool operator<(int i) const;
-		bool operator>(int i) const;
-		bool operator==(int i) const;
-		virtual void Print() override;
+		bool operator<(int const i) const;
+		bool operator>(int const i) const;
+		bool operator==(int const i) const;
+		virtual void const Print() override;
 	private:
 		std::string firstName;
 		std::string lastName;
@@ -34,9 +34,9 @@ namespace Human::Monkey
 
 		// Inherited via IPrintable
 	};
-	bool operator<(int i, Person p);
-	bool operator>(int i, Person p);
-	bool operator==(int i, Person p);
+	bool operator<(int const i, Person const p);
+	bool operator>(int const i, Person const p);
+	bool operator==(int const i, Person const p);
 
 
 
